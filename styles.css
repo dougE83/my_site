@@ -184,6 +184,9 @@ a.linkedin {
 a.github {
   background-image: url(images/github.svg);
 }
+a.googleplus {
+  background-image: url(images/gplus.png);
+}
 a.social:hover {
   opacity: 1;
 }
