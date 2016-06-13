@@ -70,11 +70,17 @@ header .profile-image {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  border: 3px solid white;
-  transition: all .5s;
+  border: 3px #D3D3D3;
+  transition: all .7s;
 }
 header .profile-image:hover {
-  transform: scale(1.2) rotate(5deg);
+  /*transform: scale(1.2) rotate(5deg); Removing this to add flip*/
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
 }
 .tag {
   background-color: #efefef;
